@@ -1,0 +1,119 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(252, 245, 245);
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    overflow-x: hidden;
+}
+
+.container-pdf {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    overflow-x: hidden;
+}
+
+.footer-tools-pdf {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 80px;
+    overflow-x: hidden;
+}
+
+.footer-tools-pdf button {
+    width: 80px;
+    margin: 0 20px;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e1ccf3;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.footer-tools-pdf button:hover {
+    filter: brightness(0.90);
+}
+
+#pdfViewer {
+    display: flex;
+    justify-content: center;
+}
+
+#pdfViewer canvas {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.file {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    color: #495057;
+    width: 90%;
+  }
+  
+  .file::-webkit-file-upload-button {
+    background-color: rgb(252, 245, 245);
+    width: 160px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 18px;
+  }
+  
+  .custom-file-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    font-size: 40px;
+  }
+  
+  .file:focus {
+    border-color: #d2d3d4;
+  }
+
+
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(white, #7d4ea7);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #7d4ea7;
+    border-radius: 3px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #dfbde7;
+  }

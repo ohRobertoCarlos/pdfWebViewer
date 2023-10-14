@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+</head>
+
+<link rel="stylesheet" href="./loader/styles.css"/>
+<link rel="stylesheet" href="./css/styles.css"/>
+
+<body>
+    <div class="container">
+        <div class="form-group">
+            <label for="file">File:</label>
+            <input type="file" id="file" class="file" accept="application/pdf"/>
+        </div>
+    </div>
+
+    <div id="container-pdf" class="container-pdf">
+        <div id="loader" style="display: none;" class="loader"></div>
+        <div id="pdfViewer"></div>
+    </div>
+
+    <div class="footer-tools-pdf">
+        <button onclick="plusZoom()">+</button>
+        <button onclick="lessZoom()">-</button>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" integrity="sha512-q+4liFwdPC/bNdhUpZx6aXDx/h77yEQtn4I1slHydcbZK34nLaR3cAeYSJshoxIOq3mjEf7xJE8YWIUHMn+oCQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/index.js"></script>
+
+</html>
