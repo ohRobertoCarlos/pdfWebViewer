@@ -1,7 +1,7 @@
 async function appendPage(pdf, container, pageNumber) {
     await pdf.getPage(pageNumber)
     .then(page => {
-        const viewport = page.getViewport({ scale: 3.0 });
+        const viewport = page.getViewport({ scale: 2.0 });
         const canvas = document.createElement('canvas');
         container.appendChild(canvas);
         const context = canvas.getContext('2d');
